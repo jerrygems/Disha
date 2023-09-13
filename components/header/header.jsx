@@ -1,13 +1,22 @@
-import react from "react";
-import { View,Text } from "react-native-web";
-import styles from "./headerStyle";
+import React from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { useWindowDimensions } from 'react-native';
+import styles from './headerStyle';
 
-const header=()=>{
-    return (
-        <>
-        <View>
-            <Text>header is here Okay</Text>
-        </View>
-        </>
-    )
-}
+const Header = ({ title, onMenuPress }) => {
+  const windowWidth = useWindowDimensions().width;
+
+  // Determine header style based on screen width
+  const headerStyle = windowWidth >= 768 ? styles.desktopHeader : styles.mobileHeader;
+
+  return (
+    <View style={headerStyle}>
+      <TouchableOpacity onPress={onMenuPress}>
+        <Text style={styles.menuIcon}>☰</Text>
+      </TouchableOpacity>
+      <Text style={styles.title}>{title}</Text>
+    </View>
+  );
+};
+
+export default Header;
