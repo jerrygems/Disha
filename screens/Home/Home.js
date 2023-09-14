@@ -3,17 +3,18 @@ import { StatusBar } from 'expo-status-bar'
 import React from 'react'
 import AuthStuff from '../../public/components/Auth/AuthStuff'
 
-const Home = () => {
+
+const Home = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <StatusBar style='auto'/>
-      <AuthStuff/>
+      <StatusBar style='auto' />
+      <AuthStuff navigation={navigation} />
     </View>
   )
 }
 const styles = StyleSheet.create({
-  container:{
-    flex:1
+  container: {
+    flex: 1
   }
 })
 export default Home
