@@ -6,6 +6,7 @@ import About from '../screens/About/About'
 import Contact from '../screens/Contact/Contact'
 import Auth from '../screens/Auth/Auth'
 import ProfileScreen from '../screens/ProfileScreen/ProfileScreen'
+import MainSection from '../screens/MainSection/ContentScreen'
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
     <NavigationContainer independent={true} >
       <Stack.Navigator initialRouteName="Screen1" screenOptions={{ headerShown: false, }}>
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="MainSection" component={MainSection} />
         <Stack.Screen name="About" component={About} />
         <Stack.Screen name="Contact" component={Contact} />
         <Stack.Screen name="Auth" component={Auth} />

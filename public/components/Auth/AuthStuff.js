@@ -26,10 +26,10 @@ const AuthStuff = ({navigation}) => {
                     <TextInput style={styles.inp1} placeholder='Enter Password' value={pass} onChangeText={text => setPass(text)}></TextInput>
                     <TouchableOpacity>
                         <LinearGradient style={styles.btn1} start={{ x: 0, y: 0.5 }} end={{ x: 1, y: 0.5 }} colors={['#e398ff', '#0077ff']}>
-                            <Text style={{ fontSize: 18 }}>Login/SignUp</Text>
+                            <Text style={{ fontSize: 18 }} onPress={() => navigation.navigate('MainSection')}>Login/SignUp</Text>
                         </LinearGradient>
                     </TouchableOpacity>
-                    <Text style={indiStyles.links} onPress={() => navigation.navigate('About')}>
+                    <Text style={indiStyles.links} >
                         Don't have an Account ? click here
                     </Text>
                 </View>
