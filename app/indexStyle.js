@@ -1,6 +1,13 @@
 import { StyleSheet } from "react-native";
 
 const indexStyles = StyleSheet.create({
+    search1:{
+        backgroundColor:'white',
+    },
+    rowCont:{
+        flexDirection:'row',
+        justifyContent:'center'
+    },
     heading: {
         fontSize: 30,
     },
@@ -50,6 +57,15 @@ const indexStyles = StyleSheet.create({
     },
     mgR100:{
         marginRight:20
+    },
+    inp1: {
+        backgroundColor: 'white',
+        paddingHorizontal: 15,
+        paddingVertical: 10,
+        borderRadius: 10,
+        width: 300,
+        margin: 10,
+        elevation: 5
     },
 })
 

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { TextInput } from 'react-native-gesture-handler'
 import styles from './AuthStuffStyles'
 import indiStyles from '../../../app/indexStyle'
+import indexStyles from '../../../app/indexStyle'
 
 
 
@@ -22,8 +23,8 @@ const AuthStuff = ({navigation}) => {
                 </View>
                 <View style={styles.cont2Child2}>
                     <Text style={[indiStyles.heading2,indiStyles.mgB100]}>Login here</Text>
-                    <TextInput style={styles.inp1} placeholder='Enter Email' value={email} onChangeText={text => setEmail(text)}></TextInput>
-                    <TextInput style={styles.inp1} placeholder='Enter Password' value={pass} onChangeText={text => setPass(text)}></TextInput>
+                    <TextInput style={indexStyles.inp1} placeholder='Enter Email' value={email} onChangeText={text => setEmail(text)}></TextInput>
+                    <TextInput style={indexStyles.inp1} placeholder='Enter Password' value={pass} onChangeText={text => setPass(text)}></TextInput>
                     <TouchableOpacity>
                         <LinearGradient style={styles.btn1} start={{ x: 0, y: 0.5 }} end={{ x: 1, y: 0.5 }} colors={['#e398ff', '#0077ff']}>
                             <Text style={{ fontSize: 18 }} onPress={() => navigation.navigate('MainSection')}>Login/SignUp</Text>

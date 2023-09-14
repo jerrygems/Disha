@@ -46,15 +46,7 @@ const AuthStuffStyles = StyleSheet.create({
         alignItems: 'center',
     },
     // extra stuff to use or make code more easy Xd
-    inp1: {
-        backgroundColor: 'white',
-        paddingHorizontal: 15,
-        paddingVertical: 10,
-        borderRadius: 10,
-        width: 300,
-        margin: 10,
-        elevation: 5
-    },
+    
     
 })
 export default AuthStuffStyles
