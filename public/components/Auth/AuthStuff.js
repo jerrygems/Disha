@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient'
 import React, { useState } from 'react'
 import { TextInput } from 'react-native-gesture-handler'
 import styles from './AuthStuffStyles'
-import indexStyles from '../../../app/indexStyle'
+import indiStyles from '../../../app/indexStyle'
 
 const AuthStuff = () => {
     const [email, setEmail] = useState('')
@@ -16,18 +16,18 @@ const AuthStuff = () => {
             </View>
             <View style={styles.container2}>
                 <View style={styles.cont2Child1}>
-                    <Text style={styles.heading}>LearnEra</Text>
+                    <Text style={indiStyles.heading}>LearnEraApp</Text>
                 </View>
                 <View style={styles.cont2Child2}>
-                    <Text style={[styles.heading2,styles.mgB100]}>Login here</Text>
-                    <TextInput style={styles.inp1} placeholder='Enter Email' value={email} onChangeText={text => setEmail(text)}></TextInput>
+                    <Text style={[indiStyles.heading2,indiStyles.mgB100]}>Login here</Text>
                     <TextInput style={styles.inp1} placeholder='Enter Password' value={pass} onChangeText={text => setPass(text)}></TextInput>
+                    <TextInput style={styles.inp1} placeholder='Enter Email' value={email} onChangeText={text => setEmail(text)}></TextInput>
                     <TouchableOpacity>
                         <LinearGradient style={styles.btn1} start={{ x: 0, y: 0.5 }} end={{ x: 1, y: 0.5 }} colors={['#e398ff', '#0077ff']}>
                             <Text style={{ fontSize: 18 }}>Login/SignUp</Text>
                         </LinearGradient>
                     </TouchableOpacity>
-                    <Text style={styles.links}>
+                    <Text style={indiStyles.links}>
                         Don't have an Account ? click here
                     </Text>
                 </View>
