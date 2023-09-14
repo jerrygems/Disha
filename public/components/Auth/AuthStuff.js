@@ -3,6 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient'
 import React, { useState } from 'react'
 import { TextInput } from 'react-native-gesture-handler'
 import styles from './AuthStuffStyles'
+import indexStyles from '../../../app/indexStyle'
 
 const AuthStuff = () => {
     const [email, setEmail] = useState('')
