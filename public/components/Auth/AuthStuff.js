@@ -1,8 +1,10 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient'
-import React from 'react'
+import { LinearGradient } from 'expo-linear-gradient'
+import React, { useState } from 'react'
+import { TextInput } from 'react-native-gesture-handler'
 
 const AuthStuff = () => {
+    const [email, setEmail] = useState()
     return (
         <View style={styles.container}>
             <View style={styles.container1}>
@@ -12,12 +14,16 @@ const AuthStuff = () => {
                 <View style={styles.cont2Child}>
                     <Text style={styles.heading}>LearnEra</Text>
                 </View>
-                <TouchableOpacity style={styles.btn1}>
-                    <LinearGradient colors={['#e398ff','#796209','#0077ff']}>
-                        <Text>Login/SignUp</Text>
-                    </LinearGradient>
+                <View style={styles.cont2Child2}>
+                    <TextInput style={styles.inp1} placeholder='Enter Email' value='email' onChangeText={text=> setEmail(text)}></TextInput>
+                    <TextInput style={styles.inp1} placeholder='Enter Password' value='password' onChangeText={text=> setPassword(text)}></TextInput>
+                    <TouchableOpacity>
+                        <LinearGradient style={styles.btn1} start={{ x: 0, y: 0.5 }} end={{ x: 1, y: 0.5 }} colors={['#e398ff', '#0077ff']}>
+                            <Text>Login/SignUp</Text>
+                        </LinearGradient>
+                    </TouchableOpacity>
+                </View>
 
-                </TouchableOpacity>
             </View>
         </View>
     )
@@ -51,6 +57,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     btn1: {
+        top: 20,
         paddingVertical: 8,
         paddingHorizontal: 20,
         borderRadius: 10,
@@ -60,9 +67,22 @@ const styles = StyleSheet.create({
         top: 0,
         padding: 0
     },
+    cont2Child2:{
+        top:40,
+        alignItems:'center',
+    },
     // extra stuff to use or make code more easy Xd
     heading: {
         fontSize: 30,
+    },
+    inp1:{
+        backgroundColor:'white',
+        paddingHorizontal:15,
+        paddingVertical:8,
+        borderRadius:10,
+        width:'100%',
+        margin:5,
+
     }
 })
 export default AuthStuff
