@@ -24,4 +24,4 @@ const Search = () => {
   )
 }
 
-export default SearchBar
+export default Search
