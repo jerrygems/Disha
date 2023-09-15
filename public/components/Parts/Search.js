@@ -20,16 +20,7 @@ const Search = () => {
         cancelButtonTitle="X" // Text for the cancel button
         clearIcon={true} // Set to 'true' to show clear icon
       />
-      <SearchBar
-        style={indexStyles.inp2}
-        placeholder="Search..."
-        onChangeText={(text) => setSearch(text)}
-        value={search}
-        onSubmitEditing={handleSearch}
-        platform="default" // 'ios' or 'android'
-        cancelButtonTitle="X" // Text for the cancel button
-        clearIcon={false} // Set to 'true' to show clear icon
-      />
+      
     </View> 
   )
 }
