@@ -20,7 +20,7 @@ const Search = () => {
         cancelButtonTitle="X" // Text for the cancel button
         clearIcon={true} // Set to 'true' to show clear icon
       />
-    </View> hhvhvv
+    </View> 
   )
 }
 
