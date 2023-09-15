@@ -5,6 +5,10 @@ const indexStyles = StyleSheet.create({
         fontSize:25,
         fontStyle:'bold'
     },
+    fontB:{
+        fontSize:17,
+        fontStyle:'bold'
+    },
     cont:{
         backgroundColor:'white',
         padding:10,
@@ -21,7 +25,7 @@ const indexStyles = StyleSheet.create({
         margin:10,
         backgroundColor:'grey',
         borderRadius:30,
-        elevation:2,
+        elevation:5,
     },
     wrapper:{
 
