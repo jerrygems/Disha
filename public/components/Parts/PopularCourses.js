@@ -25,7 +25,7 @@ const PopularCourses = () => {
                             <View>
                                 <Text style={indi.fontB}>{item}</Text>
                                 <Text style={[indi.fontC,indi.ML10]}>description will be here so i hope you got it right</Text>
-                                <Text style={[indi.fontD,indi.ML10]}>10/10/2025</Text>
+                                <Text style={[indi.fontD,indi.Fwhite,indi.MLT]}>10/10/2025</Text>
                             </View>
                         </LinearGradient>
                     </View>

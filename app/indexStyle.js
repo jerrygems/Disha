@@ -17,12 +17,18 @@ const indexStyles = StyleSheet.create({
     },
     fontB:{
         fontSize:17,
+        marginBottom:3,
+        marginTop:3,
     },
     fontC:{
         fontSize:14,
     },
     fontD:{
         fontSize:10,
+    },
+    MLT:{
+        marginTop:5,
+        marginLeft:5,
     },
     ML10:{
         marginLeft:10
