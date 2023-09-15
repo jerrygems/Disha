@@ -1,7 +1,7 @@
 import { View, Text, FlatList } from 'react-native'
 import React from 'react'
 import indexStyles from '../../../app/indexStyle'
-import LinearGradient from 'react-native-linear-gradient'
+import LinearGradient from 'expo-linear-gradient'
 
 const Categories = () => {
     return (
