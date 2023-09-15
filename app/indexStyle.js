@@ -1,22 +1,75 @@
 import { StyleSheet } from "react-native";
 
 const indexStyles = StyleSheet.create({
+    image1: {
+        width: '100%',
+        height:120,
+        resizeMode: 'stretch'
+    },
+    BGwhite:{
+        backgroundColor:'white'
+    },
+    Fwhite:{
+        color:'white',
+    },
     fontA:{
         fontSize:25,
     },
     fontB:{
         fontSize:17,
     },
+    fontC:{
+        fontSize:14,
+    },
+    fontD:{
+        fontSize:10,
+    },
+    ML10:{
+        marginLeft:10
+    },
+    wrap:{
+        overflow:"wrap"
+    },
     cont:{
         backgroundColor:'white',
         padding:10,
+        margin:4,
         borderRadius:10,
         elevation:5,
     },
+    contNormalHCenter:{
+        backgroundColor:'transparent',
+        display:'flex',
+        flexDirection:'column',
+        alignItems:'center',
+    },
+    B20:{
+        borderRadius:20
+    },
+    B10:{
+        borderRadius:10
+    },
     contNormal:{
+        margin:4,
         backgroundColor:'white',
         padding:10,
-        borderRadius:30,
+    },
+    cardA:{
+        padding:10,
+        margin:10,
+        borderRadius:10,
+        elevation:5,
+        width:180
+
+    },
+    cardB:{
+        padding:10,
+        margin:10,
+        borderRadius:10,
+        elevation:5,
+        height:140,
+        width:140
+
     },
     item:{
         padding:10,

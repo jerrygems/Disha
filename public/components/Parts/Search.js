@@ -17,7 +17,7 @@ const Search = () => {
         value={search}
         onSubmitEditing={handleSearch}
         platform="default" // 'ios' or 'android'
-        cancelButtonTitle="X" // Text for the cancel button
+        cancelButtonTitle="" // Text for the cancel button
         clearIcon={true} // Set to 'true' to show clear icon
       />
       
