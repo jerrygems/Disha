@@ -17,8 +17,7 @@ const Categories = () => {
                 keyExtractor={(item, index) => index.toString()}
                 renderItem={({ item }) => (
                     <View style={indexStyles.wrapper}>
-                        <LinearGradient colors={['#000000', '#ffffff']}
-                            start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}>
+                        <LinearGradient style={styles.btn1} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} colors={['#e398ff', '#0077ff']}>
                             <Text style={indexStyles.item}>{item}</Text>
                         </LinearGradient>
                     </View>
