@@ -2,7 +2,6 @@ import { View, Text, FlatList } from 'react-native'
 import React from 'react'
 import indexStyles from '../../../app/indexStyle'
 import {LinearGradient} from 'expo-linear-gradient'
-import { useFonts } from 'react-native-google-fonts';
 
 const Categories = () => {
     return (
