@@ -49,11 +49,26 @@ const indexStyles = StyleSheet.create({
         flexDirection:'column',
         alignItems:'center',
     },
+    contNormalVCenter:{
+        backgroundColor:'transparent',
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'flex-start',
+        margin:10
+    },
+    btnA:{
+        height:40,
+        borderRadius:10,
+        paddingHorizontal:15,
+        paddingVertical:4,
+        margin:5,
+
+    },
     B20:{
-        borderRadius:20
+        borderRadius:20,
     },
     B10:{
-        borderRadius:10
+        borderRadius:10,
     },
     contNormal:{
         margin:4,

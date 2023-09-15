@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   line: {
     height: 1,
     backgroundColor: 'black',
-    marginVertical: 10, 
+    marginVertical: 3, 
   },
 });
 
