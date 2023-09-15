@@ -3,11 +3,9 @@ import { StyleSheet } from "react-native";
 const indexStyles = StyleSheet.create({
     fontA:{
         fontSize:25,
-        fontStyle:'bold'
     },
     fontB:{
         fontSize:17,
-        fontStyle:'bold'
     },
     cont:{
         backgroundColor:'white',
