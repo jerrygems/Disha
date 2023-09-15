@@ -1,6 +1,31 @@
 import { StyleSheet } from "react-native";
 
 const indexStyles = StyleSheet.create({
+    fontA:{
+        fontSize:25,
+        fontStyle:'bold'
+    },
+    cont:{
+        backgroundColor:'white',
+        padding:10,
+        borderRadius:10,
+        elevation:5,
+    },
+    contNormal:{
+        backgroundColor:'white',
+        padding:10,
+        borderRadius:30,
+    },
+    item:{
+        padding:10,
+        margin:10,
+        backgroundColor:'grey',
+        borderRadius:30,
+        elevation:2,
+    },
+    wrapper:{
+
+    },
     search1:{
         backgroundColor:'white',
     },
@@ -64,6 +89,15 @@ const indexStyles = StyleSheet.create({
         paddingVertical: 10,
         borderRadius: 10,
         width: 300,
+        margin: 10,
+        elevation: 5
+    },
+    inp2: {
+        backgroundColor: 'white',
+        paddingHorizontal: 15,
+        paddingVertical: 10,
+        borderRadius: 10,
+
         margin: 10,
         elevation: 5
     },

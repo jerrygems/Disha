@@ -1,11 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import Search from '../../public/components/Parts/Search'
+import Categories from '../../public/components/Parts/Categories'
 
 const ContentScreen = () => {
   return (
     <View>
-      <Search/>
+      <Categories/>
     </View>
   )
 }
