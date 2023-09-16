@@ -52,6 +52,7 @@ const indexStyles = StyleSheet.create({
     contNormalVCenter:{
         backgroundColor:'transparent',
         display:'flex',
+        overflow:'wrap',
         flexDirection:'row',
         justifyContent:'flex-start',
         margin:10
@@ -100,7 +101,13 @@ const indexStyles = StyleSheet.create({
         elevation:5,
     },
     wrapper:{
+        backgroundColor:'white',
+        elevation:5,
+        borderRadius:20,
 
+    },
+    P20:{
+        paddingHorizontal:20
     },
     search1:{
         backgroundColor:'white',

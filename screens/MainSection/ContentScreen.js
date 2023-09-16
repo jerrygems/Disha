@@ -1,4 +1,4 @@
-import {ScrollView , View} from 'react-native'
+import { ScrollView, View } from 'react-native'
 import React from 'react'
 import Search from '../../public/components/Parts/Search'
 import Categories from '../../public/components/Parts/Categories'
@@ -10,15 +10,13 @@ import CoursePage from '../../public/components/CoursePage/CoursePage'
 const ContentScreen = () => {
   return (
     <ScrollView style={[indexStyles.BGwhite]}>
-      <CoursePage/>
-      {/* 
-      first screen 
-      <Search/>
-      <Categories/>
-      <Recommended/>
-      <PopularCourses/>
-      <HorizontalLine/>
-      */}
+      {/* <CoursePage/> */}
+      <Search />
+      <Categories />
+      <Recommended />
+      <PopularCourses />
+      <HorizontalLine />
+
     </ScrollView>
   )
 }

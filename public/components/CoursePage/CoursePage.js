@@ -1,10 +1,10 @@
-import { Button, View, Text } from 'react-native'
+import { View, ScrollView, Image, FlatList } from 'react-native'
+import * as React from 'react';
+import { Button, List, MD3Colors, Text } from 'react-native-paper';
+import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import { WebView } from 'react-native-webview'
-import React from 'react'
 import styles from './styles'
 import indi from '../../../app/indexStyle'
-import { TouchableOpacity } from 'react-native-gesture-handler'
-import { LinearGradient } from 'expo-linear-gradient'
 import HorizontalLine from '../Parts/HorizontalLine'
 
 const CoursePage = () => {
@@ -19,32 +19,46 @@ const CoursePage = () => {
                 />
             </View>
             <View style={[indi.contNormalVCenter]}>
-                <TouchableOpacity>
-                    <LinearGradient style={[indi.btnA]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} colors={['#e398ff', '#0077ff']}>
-                        <Text style={indi.fontB}>Btn1</Text>
-                    </LinearGradient>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                    <LinearGradient style={[indi.btnA]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} colors={['#e398ff', '#0077ff']}>
-                        <Text style={indi.fontB}>Btn2</Text>
-                    </LinearGradient>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                    <LinearGradient style={[indi.btnA]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} colors={['#e398ff', '#0077ff']}>
-                        <Text style={indi.fontB}>Btn3</Text>
-                    </LinearGradient>
-                </TouchableOpacity>
+                <Button mode="text" onPress={() => console.log('Pressed')}>
+                    <FontAwesomeIcon name="thumbs-up" size={20} color="black" />
+                </Button>
+                <Button mode="text" onPress={() => console.log('Pressed')}>
+                    <FontAwesomeIcon name="comment" size={20} color="black" />
+                </Button>
+                <Button mode="text" onPress={() => console.log('Pressed')}>
+                    <FontAwesomeIcon name="share" size={20} color="black" />
+                </Button>
             </View>
             <HorizontalLine />
             <View>
                 <View>
-                    <Text style={[indi.fontA,indi.mgL50]}>
+                    <Text variant='headlineMedium' style={[indi.mgL50]}>
                         Description
                     </Text>
-                    <View style={[indi.contNormal,indi.mgL100,{backgroundColor:'grey'}]}>
-
+                    <View style={[indi.contNormal, indi.mgL100, { backgroundColor: 'white' }]}>
+                        <Text variant="bodySmall">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </Text>
                     </View>
                 </View>
+
+            </View>
+            <HorizontalLine />
+            <View style={indi.P20}>
+
+                <List.Section>
+                    <List.Subheader>Suggestions</List.Subheader>
+                    <List.Item title="First Item" left={() => <List.Icon icon="folder" />} />
+                    <List.Item title="First Item" left={() => <List.Icon icon="folder" />} />
+                    <List.Item title="First Item" left={() => <List.Icon icon="folder" />} />
+                    <List.Item title="First Item" left={() => <List.Icon icon="folder" />} />
+                    <List.Item title="First Item" left={() => <List.Icon icon="folder" />} />
+                    <List.Item title="First Item" left={() => <List.Icon icon="folder" />} />
+
+                </List.Section>
+
+                {/* can remove after this till scrollview  */}
+
 
             </View>
         </View>

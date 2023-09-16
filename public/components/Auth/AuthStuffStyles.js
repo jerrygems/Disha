@@ -24,7 +24,8 @@ const AuthStuffStyles = StyleSheet.create({
         borderTopRightRadius: 10,
         borderTopLeftRadius: 10,
         flexDirection: 'column',
-        backgroundColor: 'lightblue',
+        backgroundColor: 'white',
+        justifyContent:'center',
         alignItems: 'center'
     },
     btn1: {
