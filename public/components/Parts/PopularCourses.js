@@ -2,14 +2,21 @@ import { View, Text, FlatList, Image } from 'react-native'
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import indi from '../../../app/indexStyle'
+import { useNavigation } from 'expo-router'
 
 const PopularCourses = () => {
+    const navigation=useNavigation()
     return (
         <View style={[indi.cont]}>
             <View style={[indi.contNormal]}>
-                <Text style={[indi.fontA]}>
-                    Popular courses
-                </Text>
+                <View style={[indi.contDust]}>
+                    <Text style={[indi.fontA, indi.cont1]}>
+                        Popular Courses
+                    </Text>
+                    <Text style={[{ fontSize: 15 }, indi.cont2]} onPress={()=>{navigation.navigate('SeeAll1')}}>
+                        See all
+                    </Text>
+                </View>
             </View>
             <FlatList
                 horizontal={true}
@@ -19,13 +26,13 @@ const PopularCourses = () => {
                     <View style={indi.wrapper}>
                         <LinearGradient style={[indi.cardA]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} colors={['#e398ff', '#0077ff']}>
                             <View style={[indi.contNormalHCenter]}>
-                                <Image style={[indi.image1,indi.B10]} source={{ uri: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80" }} />
+                                <Image style={[indi.image1, indi.B10]} source={{ uri: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80" }} />
 
                             </View>
                             <View>
                                 <Text style={indi.fontB}>{item}</Text>
-                                <Text style={[indi.fontC,indi.ML10]}>description will be here so i hope you got it right</Text>
-                                <Text style={[indi.fontD,indi.Fwhite,indi.MLT]}>10/10/2025</Text>
+                                <Text style={[indi.fontC, indi.ML10]}>description will be here so i hope you got it right</Text>
+                                <Text style={[indi.fontD, indi.Fwhite, indi.MLT]}>10/10/2025</Text>
                             </View>
                         </LinearGradient>
                     </View>

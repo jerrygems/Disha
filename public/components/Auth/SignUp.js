@@ -7,7 +7,7 @@ import { useNavigation } from 'expo-router';
 
 
 const SignUp = () => {
-    const navigation=useNavigation()
+    const navigation = useNavigation()
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -40,11 +40,10 @@ const SignUp = () => {
 
     return (
         <View style={authStyles.container}>
-            <View style={authStyles.container1}>
+            <View style={styles.container1}>
                 <Image style={authStyles.image1} source={{ uri: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80" }} />
             </View>
-            <View style={styles.container}>
-
+            <View style={styles.container2}>
                 <View style={styles.form}>
                     <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16 }}>
                         Sign Up
@@ -137,11 +136,10 @@ const SignUp = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         padding: 16,
-        borderTopLeftRadius:20,
-        borderTopRightRadius:20,
+        justifyContent:'center',
+        alignItems:'center'
+        
     },
     image: {
         width: 200,
@@ -149,8 +147,11 @@ const styles = StyleSheet.create({
         marginBottom: 16,
     },
     form: {
+        flex:1,
         width: '100%',
         maxWidth: 400,
+        justifyContent:'center',
+        
     },
     input: {
         marginBottom: 16,
@@ -168,7 +169,19 @@ const styles = StyleSheet.create({
         marginBottom: 8,
     },
     button: {
-        marginTop: 16,
+        marginTop: 10,
+    },
+    container1: {
+        flex: 0.3
+    },
+    container2: {
+        flex: 0.7,
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor:'white',
+        marginTop:-20,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
     },
 });
 

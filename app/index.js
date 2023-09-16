@@ -10,23 +10,27 @@ import ContentScreen from '../screens/MainSection/ContentScreen'
 import SignUp from '../public/components/Auth/SignUp';
 import SignIn from '../public/components/Auth/SignIn';
 import { DefaultTheme, PaperProvider } from 'react-native-paper';
+import SeeAll1 from '../public/components/Parts/SeeAll1'
+import CoursePage from '../public/components/CoursePage/CoursePage';
 
-const Stack = createStackNavigator();
+const Stackk = createStackNavigator();
 const App = () => {
   return (
     <PaperProvider theme={DefaultTheme}>
 
       <NavigationContainer independent={true} >
-        <Stack.Navigator initialRouteName="Screen1" screenOptions={{ headerShown: false, }}>
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="ContentScreen" component={ContentScreen} />
-          <Stack.Screen name="SignUp" component={SignUp} />
-          <Stack.Screen name="SignIn" component={SignIn} />
-          <Stack.Screen name="About" component={About} />
-          <Stack.Screen name="Contact" component={Contact} />
-          <Stack.Screen name="Auth" component={Auth} />
-          <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
-        </Stack.Navigator>
+        <Stackk.Navigator initialRouteName="Screen1" screenOptions={{ headerShown: false, }}>
+          <Stackk.Screen name="Home" component={Home} />
+          <Stackk.Screen name="SignUp" component={SignUp} />
+          <Stackk.Screen name="SignIn" component={SignIn} />
+          <Stackk.Screen name="ContentScreen" component={ContentScreen} />
+          <Stackk.Screen name="CoursePage" component={CoursePage} />
+          <Stackk.Screen name="SeeAll1" component={SeeAll1} />
+          <Stackk.Screen name="About" component={About} />
+          <Stackk.Screen name="Contact" component={Contact} />
+          <Stackk.Screen name="Auth" component={Auth} />
+          <Stackk.Screen name="ProfileScreen" component={ProfileScreen} />
+        </Stackk.Navigator>
       </NavigationContainer>
     </PaperProvider>
   );

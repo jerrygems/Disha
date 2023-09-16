@@ -102,7 +102,6 @@ const indexStyles = StyleSheet.create({
     },
     wrapper:{
         backgroundColor:'white',
-        elevation:5,
         borderRadius:20,
 
     },
@@ -124,7 +123,7 @@ const indexStyles = StyleSheet.create({
     },
     links: {
         top: 0,
-        marginTop: 140,
+        marginTop: 0,
         padding: 0,
         position: 'relative',
         textDecorationLine: 'underline',
@@ -183,6 +182,23 @@ const indexStyles = StyleSheet.create({
 
         margin: 10,
         elevation: 5
+    },
+    contDust: {
+        flex: 1,
+        flexDirection: 'row',
+
+    },
+    cont1: {
+        flex: 0.8,
+        backgroundColor:'transparent'
+    },
+    cont2: {
+        flex: 0.2,
+        backgroundColor:'transparent',
+        textAlign:'center',
+        textAlignVertical:'center',
+        color:'blue',
+        
     },
 })
 

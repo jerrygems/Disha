@@ -1,15 +1,20 @@
 import { View, Text, FlatList } from 'react-native'
 import React from 'react'
-import {LinearGradient} from 'expo-linear-gradient'
+import { LinearGradient } from 'expo-linear-gradient'
 import indexStyles from '../../../app/indexStyle'
 
 const Recommended = () => {
-  return (
-    <View style={[indexStyles.cont]}>
+    return (
+        <View style={[indexStyles.cont]}>
             <View style={[indexStyles.contNormal]}>
-                <Text style={[indexStyles.fontA]}>
-                    Recommended
-                </Text>
+                <View style={[indexStyles.contDust]}>
+                    <Text style={[indexStyles.fontA, indexStyles.cont1]}>
+                        Popular Courses
+                    </Text>
+                    <Text style={[{ fontSize: 15 }, indexStyles.cont2]} onPress={() => { navigation.navigate('SeeAll1') }}>
+                        See all
+                    </Text>
+                </View>
             </View>
             <FlatList
                 horizontal={true}
@@ -19,7 +24,7 @@ const Recommended = () => {
                     <View style={indexStyles.wrapper}>
                         <LinearGradient style={[indexStyles.cardB]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} colors={['#e398ff', '#0077ff']}>
                             <View style={indexStyles.wrap}>
-                                <Text style={[indexStyles.Fwhite,indexStyles.fontB]}>{item}</Text>
+                                <Text style={[indexStyles.Fwhite, indexStyles.fontB]}>{item}</Text>
                             </View>
                             <View>
                                 <Text>
@@ -34,7 +39,7 @@ const Recommended = () => {
                 )}
             />
         </View>
-  )
+    )
 }
 
 export default Recommended

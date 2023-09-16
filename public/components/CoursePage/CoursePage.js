@@ -1,5 +1,6 @@
 import { View, ScrollView, Image, FlatList } from 'react-native'
 import * as React from 'react';
+import Video from 'react-native-video';
 import { Button, List, MD3Colors, Text } from 'react-native-paper';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import { WebView } from 'react-native-webview'
@@ -13,7 +14,7 @@ const CoursePage = () => {
     return (
         <View>
             <View>
-                <WebView
+                <Video
                     source={{ uri: 'https://www.youtube.com/embed/g7-Eu0qLDYs' }}
                     style={styles.video}
                 />
