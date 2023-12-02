@@ -17,6 +17,7 @@ const Stackk = createStackNavigator();
 const App = () => {
   return (
     <PaperProvider theme={DefaultTheme}>
+      <Text></Text>
 
       <NavigationContainer independent={true} >
         <Stackk.Navigator initialRouteName="Screen1" screenOptions={{ headerShown: false, }}>
